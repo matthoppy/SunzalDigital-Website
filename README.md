@@ -12,7 +12,12 @@ It's plain HTML and CSS with no build step. Everything the site serves lives in 
 
 Open `public/index.html` in a browser, or run `npx http-server public`.
 
-## Deploy (Cloudflare)
+## Deploy
+
+**GitHub Pages:** every push to `main` publishes `public/` via `.github/workflows/pages.yml`.
+In the repo's Settings → Pages, set **Source** to **GitHub Actions** (one-time).
+
+**Cloudflare (alternative):**
 
 ```sh
 npx wrangler deploy
