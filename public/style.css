@@ -182,6 +182,9 @@ p { margin: 0; }
 .contact-inner { position: relative; max-width: 760px; }
 .contact h2 { margin-bottom: 18px; }
 .contact p { color: rgba(255, 255, 255, 0.72); font-size: 1.12rem; margin-bottom: 34px; }
+.contact .contact-email { font-size: 0.95rem; margin: 22px 0 0; color: rgba(255, 255, 255, 0.55); }
+.contact-email a { color: #fff; text-underline-offset: 3px; }
+.contact-email a:hover { color: var(--accent); }
 
 /* Footer */
 .footer { background: var(--dark); color: rgba(255, 255, 255, 0.55); font-size: 0.88rem; border-top: 1px solid rgba(255, 255, 255, 0.08); }
