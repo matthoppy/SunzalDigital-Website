@@ -12,12 +12,12 @@ It's plain HTML and CSS with no build step. Everything the site serves lives in 
 
 Open `public/index.html` in a browser, or run `npx http-server public`.
 
-## Deploy (Cloudflare)
+## Deploy
 
-The site is a static-assets Cloudflare Worker (`wrangler.jsonc` serves `public/`).
-Cloudflare is connected to this repo, so every push to `main` deploys automatically.
+**GitHub Pages:** every push to `main` publishes `public/` via `.github/workflows/pages.yml`.
+In the repo's Settings → Pages, set **Source** to **GitHub Actions** (one-time).
 
-To deploy by hand instead:
+**Cloudflare (alternative):**
 
 ```sh
 npx wrangler deploy
