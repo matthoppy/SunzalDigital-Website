@@ -5,33 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sunzal Digital | Brand guide</title>
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0F1C26">
+  <meta name="theme-color" content="#EDF1F0">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <style>
     .guide-head { padding: clamp(48px, 7vw, 96px) 0 clamp(40px, 5vw, 64px); border-bottom: 1px solid var(--line); }
-    .guide-head h1 { margin-top: 24px; font-size: clamp(2.5rem, 1.4rem + 3.6vw, 4.25rem); letter-spacing: -0.045em; line-height: 1; }
-    .guide-head p { margin-top: 20px; max-width: 36em; color: var(--slate); font-size: 18px; }
+    .guide-head h1 { font-size: clamp(2.5rem, 1.4rem + 3.6vw, 4.25rem); letter-spacing: -0.03em; line-height: 1; }
+    .guide-head p { margin-top: 20px; max-width: 34em; color: var(--slate); font-size: 18px; }
     .guide-section { padding: clamp(56px, 7vw, 96px) 0; border-bottom: 1px solid var(--line); }
     .guide-section > .container > h2 { font-size: clamp(1.75rem, 1.2rem + 1.4vw, 2.25rem); }
-    .guide-section > .container > p { margin-top: 12px; max-width: 40em; color: var(--slate); }
+    .guide-section > .container > p { margin-top: 12px; max-width: 36em; color: var(--slate); }
     .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-top: 40px; }
-    .tile { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--white); }
+    .tile { margin: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--white); }
     .tile-art { display: grid; place-items: center; aspect-ratio: 3 / 2; padding: 32px; }
     .tile-art img { height: auto; }
-    .tile-art.on-paper { background: var(--paper); }
-    .tile-art.on-ink { background: var(--ink); }
-    .tile-art.on-white { background: var(--white); }
+    .on-glass { background: var(--glass); }
+    .on-ink { background: var(--ink); }
+    .on-white { background: var(--white); }
     .tile-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 16px; border-top: 1px solid var(--line); }
-    .tile-meta strong { font-size: 15px; font-weight: 500; }
-    .tile-meta span { display: flex; gap: 12px; font: 400 13px/1 var(--mono); }
-    .tile-meta a { color: var(--slate); text-underline-offset: 3px; }
+    .tile-meta strong { font-size: 15px; font-weight: 600; }
+    .tile-meta span { display: flex; gap: 14px; font-size: 14px; font-weight: 600; }
+    .tile-meta a { color: var(--slate); }
     .tile-meta a:hover { color: var(--sun-ink); }
-    .rules { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 48px; }
+    .rules { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
     .rules div { padding-top: 16px; border-top: 1px solid var(--ink); }
     .rules h3 { font-size: 17px; letter-spacing: -0.01em; }
     .rules p { margin-top: 8px; color: var(--slate); font-size: 15.5px; }
@@ -39,45 +39,47 @@
     .swatch { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--white); }
     .swatch-chip { height: 120px; }
     .swatch-info { padding: 14px 16px 16px; }
-    .swatch-info strong { display: block; font-size: 15px; font-weight: 600; }
-    .swatch-info code { display: block; margin-top: 4px; font: 400 13px/1.4 var(--mono); color: var(--slate); }
+    .swatch-info strong { display: block; font-size: 15px; font-weight: 700; font-stretch: var(--wide); }
+    .swatch-info .hex { display: block; margin-top: 4px; font-size: 14px; color: var(--slate); font-variant-numeric: tabular-nums; }
     .swatch-info p { margin-top: 8px; font-size: 14px; color: var(--slate); line-height: 1.5; }
-    .type-specimens { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-top: 40px; }
+    .specimens { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-top: 40px; }
     .specimen { padding: 32px; border: 1px solid var(--line); border-radius: 10px; background: var(--white); }
-    .specimen .big { font-size: 64px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; }
-    .specimen .mono-big { font: 500 40px/1.1 var(--mono); letter-spacing: 0; }
+    .specimen .big { font-size: 64px; font-weight: 700; font-stretch: var(--wide); letter-spacing: -0.03em; line-height: 1; }
+    .specimen .big-normal { font-size: 64px; font-weight: 400; letter-spacing: -0.02em; line-height: 1; }
     .specimen p { margin-top: 16px; color: var(--slate); font-size: 15.5px; }
     .scale { margin-top: 32px; border-top: 1px solid var(--line); }
-    .scale div { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--line); }
-    .scale code { font: 400 13px/1.4 var(--mono); color: var(--slate); }
+    .scale div { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--line); }
+    .scale .role { font-size: 14px; font-weight: 600; color: var(--slate); }
     .voice { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-top: 40px; }
     .voice > div { padding: 28px; border-radius: 10px; border: 1px solid var(--line); background: var(--white); }
-    .voice h3 { font: 500 12px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--slate); }
+    .voice h3 { font-size: 15px; font-weight: 600; font-stretch: 100%; letter-spacing: 0; color: var(--slate); }
     .voice ul { margin-top: 16px; }
     .voice li { padding: 10px 0; border-top: 1px solid var(--line); font-size: 15.5px; }
     .voice li:first-child { border-top: 0; padding-top: 0; }
+    .mini-sunset { margin-top: 40px; padding: 48px 32px 32px; border-radius: 10px; background: var(--ink); }
+    .mini-sunset .sunset-sun { width: min(420px, 100%); }
+    .mini-sunset .sunset-bar, .mini-sunset .sunset-reflection { height: 10px; margin-top: 10px; }
     @media (max-width: 720px) {
-      .rules, .type-specimens, .voice { grid-template-columns: minmax(0, 1fr); }
+      .rules, .specimens, .voice { grid-template-columns: minmax(0, 1fr); }
       .scale div { grid-template-columns: minmax(0, 1fr); gap: 6px; }
-      .specimen .big { font-size: 48px; }
+      .specimen .big, .specimen .big-normal { font-size: 48px; }
     }
   </style>
 </head>
 <body>
-  <header class="site-header is-scrolled">
+  <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="../" aria-label="Sunzal Digital home">
-        <img class="logo-svg" src="sunzal-logo.svg" alt="" width="303" height="45">
+        <img class="logo-svg" src="sunzal-logo.svg" alt="" width="325" height="45">
       </a>
-      <a class="button button-outline button-small" href="../">Back to site</a>
+      <a class="text-link" href="../">Back to site</a>
     </div>
   </header>
 
   <main>
     <section class="guide-head">
       <div class="container">
-        <p class="kicker"><span class="kicker-sun" aria-hidden="true"></span>Brand guide</p>
-        <h1>Sunzal Digital brand</h1>
+        <h1>Sunzal Digital brand guide</h1>
         <p>The logo, colours, type and tone of voice that make Sunzal Digital look and sound like itself. Use these for the website, quotes, invoices, social profiles and email signatures.</p>
       </div>
     </section>
@@ -85,30 +87,30 @@
     <section class="guide-section" aria-labelledby="logo-title">
       <div class="container">
         <h2 id="logo-title">Logo</h2>
-        <p>The mark is a sun setting on the horizon, with its reflection in the water below. Simple enough to read at favicon size, and it gives the brand its warm accent colour. The wordmark is set in Geist and outlined, so it looks the same everywhere.</p>
+        <p>The mark is a sun setting on the horizon, with its reflection in the water below. It reads at favicon size and gives the brand its warm accent. The wordmark is set in Archivo Semi Expanded and outlined, so it looks the same everywhere.</p>
         <div class="tiles">
-          <figure class="tile" style="margin:0">
-            <div class="tile-art on-paper"><img src="sunzal-logo.svg" alt="Sunzal Digital primary logo" width="303" height="45" style="width:88%"></div>
+          <figure class="tile">
+            <div class="tile-art on-glass"><img src="sunzal-logo.svg" alt="Sunzal Digital primary logo" width="325" height="45" style="width:88%"></div>
             <figcaption class="tile-meta"><strong>Primary</strong><span><a href="sunzal-logo.svg" download>SVG</a><a href="sunzal-logo.png" download>PNG</a></span></figcaption>
           </figure>
-          <figure class="tile" style="margin:0">
-            <div class="tile-art on-ink"><img src="sunzal-logo-reversed.svg" alt="Sunzal Digital reversed logo" width="303" height="45" style="width:88%"></div>
+          <figure class="tile">
+            <div class="tile-art on-ink"><img src="sunzal-logo-reversed.svg" alt="Sunzal Digital reversed logo" width="325" height="45" style="width:88%"></div>
             <figcaption class="tile-meta"><strong>Reversed</strong><span><a href="sunzal-logo-reversed.svg" download>SVG</a><a href="sunzal-logo-reversed.png" download>PNG</a></span></figcaption>
           </figure>
-          <figure class="tile" style="margin:0">
-            <div class="tile-art on-paper"><img src="sunzal-logo-stacked.svg" alt="Sunzal Digital stacked logo" width="266" height="134" style="width:70%"></div>
+          <figure class="tile">
+            <div class="tile-art on-glass"><img src="sunzal-logo-stacked.svg" alt="Sunzal Digital stacked logo" width="290" height="134" style="width:72%"></div>
             <figcaption class="tile-meta"><strong>Stacked</strong><span><a href="sunzal-logo-stacked.svg" download>SVG</a><a href="sunzal-logo-stacked.png" download>PNG</a></span></figcaption>
           </figure>
-          <figure class="tile" style="margin:0">
+          <figure class="tile">
             <div class="tile-art on-white"><img src="sunzal-mark.svg" alt="Sunzal Digital mark" width="96" height="96" style="width:96px"></div>
             <figcaption class="tile-meta"><strong>Mark</strong><span><a href="sunzal-mark.svg" download>SVG</a><a href="sunzal-mark.png" download>PNG</a></span></figcaption>
           </figure>
-          <figure class="tile" style="margin:0">
-            <div class="tile-art on-paper"><img src="sunzal-avatar.png" alt="Sunzal Digital profile picture" width="120" height="120" style="width:120px;border-radius:50%"></div>
+          <figure class="tile">
+            <div class="tile-art on-glass"><img src="sunzal-avatar.png" alt="Sunzal Digital profile picture" width="120" height="120" style="width:120px;border-radius:50%"></div>
             <figcaption class="tile-meta"><strong>Profile picture</strong><span><a href="sunzal-avatar.svg" download>SVG</a><a href="sunzal-avatar.png" download>PNG</a></span></figcaption>
           </figure>
-          <figure class="tile" style="margin:0">
-            <div class="tile-art on-paper"><img src="sunzal-logo-mono.svg" alt="Sunzal Digital one-colour logo" width="303" height="45" style="width:88%"></div>
+          <figure class="tile">
+            <div class="tile-art on-glass"><img src="sunzal-logo-mono.svg" alt="Sunzal Digital one-colour logo" width="325" height="45" style="width:88%"></div>
             <figcaption class="tile-meta"><strong>One colour</strong><span><a href="sunzal-logo-mono.svg" download>SVG</a></span></figcaption>
           </figure>
         </div>
@@ -120,17 +122,29 @@
       </div>
     </section>
 
+    <section class="guide-section" aria-labelledby="sunset-title">
+      <div class="container">
+        <h2 id="sunset-title">The sunset</h2>
+        <p>The mark drawn big: an orange half-disc on a horizon bar, with a shorter reflection bar below. Use it once per piece, at the moment you want people to act, such as the contact section of the website or the last page of a proposal. Never as a background pattern, and never with gradients.</p>
+        <div class="mini-sunset" aria-hidden="true">
+          <div class="sunset-sky"><div class="sunset-sun" style="transform:none"></div></div>
+          <div class="sunset-bar"></div>
+          <div class="sunset-reflection"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="guide-section" aria-labelledby="colour-title">
       <div class="container">
         <h2 id="colour-title">Colour</h2>
-        <p>Mostly ink and paper, with sun used sparingly: in the logo, for the main call to action and for small accents. Sun should never be the background of a whole section.</p>
+        <p>Ink and glass do most of the work. Ink owns whole sections (the work, the close, the footer), and sun appears where you want action: the main buttons and the sunset.</p>
         <div class="swatches">
-          <div class="swatch"><div class="swatch-chip" style="background:#0F1C26"></div><div class="swatch-info"><strong>Ink</strong><code>#0F1C26</code><p>Headings, body text, dark sections and buttons.</p></div></div>
-          <div class="swatch"><div class="swatch-chip" style="background:#F5F2EC;border-bottom:1px solid var(--line)"></div><div class="swatch-info"><strong>Paper</strong><code>#F5F2EC</code><p>Main background. Warm, not stark white.</p></div></div>
-          <div class="swatch"><div class="swatch-chip" style="background:#C4461A"></div><div class="swatch-info"><strong>Sun</strong><code>#C4461A</code><p>Logo, main call-to-action buttons (with white text) and accents.</p></div></div>
-          <div class="swatch"><div class="swatch-chip" style="background:#F08A4B"></div><div class="swatch-info"><strong>Sun light</strong><code>#F08A4B</code><p>The sun on dark backgrounds.</p></div></div>
-          <div class="swatch"><div class="swatch-chip" style="background:#4B5663"></div><div class="swatch-info"><strong>Slate</strong><code>#4B5663</code><p>Secondary text and "digital" in the logo.</p></div></div>
-          <div class="swatch"><div class="swatch-chip" style="background:#E4DED3"></div><div class="swatch-info"><strong>Stone</strong><code>#E4DED3</code><p>Dividing lines, borders and quiet panels.</p></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#0F1C26"></div><div class="swatch-info"><strong>Ink</strong><span class="hex">#0F1C26</span><p>Headings, body text, dark sections.</p></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#EDF1F0;border-bottom:1px solid var(--line)"></div><div class="swatch-info"><strong>Glass</strong><span class="hex">#EDF1F0</span><p>Main background. Cool, like the edge of a pane of glass.</p></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#C4461A"></div><div class="swatch-info"><strong>Sun</strong><span class="hex">#C4461A</span><p>Logo and main buttons on light backgrounds, with white text.</p></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#F08A4B"></div><div class="swatch-info"><strong>Sun light</strong><span class="hex">#F08A4B</span><p>The sun on dark backgrounds, with ink text on top.</p></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#46525E"></div><div class="swatch-info"><strong>Slate</strong><span class="hex">#46525E</span><p>Secondary text and "digital" in the logo.</p></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#D3DCDA"></div><div class="swatch-info"><strong>Line</strong><span class="hex">#D3DCDA</span><p>Dividing lines and borders on glass.</p></div></div>
         </div>
       </div>
     </section>
@@ -138,22 +152,22 @@
     <section class="guide-section" aria-labelledby="type-title">
       <div class="container">
         <h2 id="type-title">Type</h2>
-        <p>One family does almost everything. Geist is free from Google Fonts, so it works in Google Docs, Canva and on any computer.</p>
-        <div class="type-specimens">
+        <p>One family, Archivo, in two widths. It's free from Google Fonts, so it works in Google Docs, Canva and on any computer.</p>
+        <div class="specimens">
           <div class="specimen">
-            <div class="big">Geist Aa</div>
-            <p>Headings in SemiBold (600) with tight letter-spacing. Body text in Regular (400), and Medium (500) for buttons and emphasis.</p>
+            <div class="big">Archivo Aa</div>
+            <p>Semi Expanded, Bold (700) for headlines, names and buttons. The wide, sturdy letters are what make the brand recognisable.</p>
           </div>
           <div class="specimen">
-            <div class="mono-big">GEIST MONO</div>
-            <p>Small uppercase labels only, such as section labels, locations and captions. Never for paragraphs.</p>
+            <div class="big-normal">Archivo Aa</div>
+            <p>Normal width, Regular (400) for reading, Medium (500) and SemiBold (600) for labels and emphasis.</p>
           </div>
         </div>
         <div class="scale">
-          <div><code>Display / 600</code><span style="font-size:clamp(2.25rem,1.4rem + 3vw,4rem);font-weight:600;letter-spacing:-0.045em;line-height:1">Websites that bring in work.</span></div>
-          <div><code>Heading / 600</code><span style="font-size:32px;font-weight:600;letter-spacing:-0.03em;line-height:1.1">Selected work</span></div>
-          <div><code>Body / 400</code><span style="font-size:17px;color:var(--slate)">I design and build fast, good-looking websites for trade and local service businesses.</span></div>
-          <div><code>Label / Mono 500</code><span class="kicker" style="color:var(--slate)">Auckland, New Zealand</span></div>
+          <div><span class="role">Display</span><span style="font-size:clamp(2.25rem,1.4rem + 3vw,4rem);font-weight:700;font-stretch:112.5%;letter-spacing:-0.03em;line-height:1">Websites that bring in work.</span></div>
+          <div><span class="role">Heading</span><span style="font-size:32px;font-weight:700;font-stretch:112.5%;letter-spacing:-0.02em;line-height:1.1">Recent work</span></div>
+          <div><span class="role">Body</span><span style="font-size:17px;color:var(--slate)">I build fast, good-looking websites for trade and local service businesses.</span></div>
+          <div><span class="role">Label</span><span style="font-size:14px;font-weight:600;color:var(--slate)">Auckland, New Zealand</span></div>
         </div>
       </div>
     </section>

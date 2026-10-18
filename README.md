@@ -26,8 +26,15 @@ npx wrangler deploy
 
 ## Adding a new project
 
-Copy one of the `<article class="case">` blocks in `public/index.html`, update the number, text, links and
-`--tint` panel colour, then add two screenshots to `public/images/`:
+1. Copy one of the `<article class="case">` blocks in the Work section of `public/index.html`, give it a new `id`,
+   and update the name, place, link, summary and "What I did" list. The `case-a`, `case-b` and `case-c` classes
+   set the layout: large image left, large image right, or one full-width image with three below.
+2. Add screenshots to `public/images/` as WebP:
+   - desktop views: 1440×900 viewport at 1.5× (2160×1350)
+   - phone view for the hero row: 390×844 viewport at 2× (780×1688), named `name-mobile.webp`
+3. To show the new site in the hero, add it to `.horizon-sites` and `.horizon-captions`.
 
-- `name.jpg`: desktop, 1440×900 viewport at 1.5× (2160×1350)
-- `name-mobile.jpg`: phone, 390×844 viewport at 2× (780×1688)
+## Brand
+
+Colours, type and logo files live in `public/brand/`, with a guide page at `/brand/`.
+The type is Archivo (Semi Expanded for headings, normal width for text) from Google Fonts.
