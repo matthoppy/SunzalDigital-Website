@@ -40,12 +40,12 @@ One person does the work from the first chat to launch and beyond: no agency lay
 - Three live client sites, with screenshots in `public/images/`:
   - Balustrading Concepts, Auckland (balustrading.co.nz): gallery, a page per service, quote requests.
   - Brennan Glass, London (brennanglass.com): service and area pages, built on Webflow so the team can edit it.
-  - Custom Showers, London (customshowers.uk): online shower designer, instant quotes, a private CRM for quotes, jobs and invoices.
+  - Custom Showers, London (customshowers.uk): online shower designer that sends measurements and a panel schedule with each enquiry (it does not show a price), and a private CRM for quotes, jobs and invoices.
 - None of the following exist, so none may be invented: testimonials, client logos beyond these three, prices, performance or ranking metrics, or a photo of Matt.
 
 ## Product Principles
 
-1. Show the real work; never claim what the work can show.
+1. Show the real work instead of making claims about results.
 2. One clear action, email Matt, reachable from every part of the page.
 3. Plain language over industry jargon.
 4. Honest about scale: one person, three clients so far, two countries.
